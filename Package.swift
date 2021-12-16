@@ -17,7 +17,15 @@ let package = Package(
             name: "SDWebImage",
             targets: ["SDWebImage"]),
         .library(
+            name: "SDWebImageDynamic",
+            type: .dynamic,
+            targets: ["SDWebImage"]),
+        .library(
             name: "SDWebImageMapKit",
+            targets: ["SDWebImageMapKit"]),
+        .library(
+            name: "SDWebImageMapKitDynamic",
+            type: .dynamic,
             targets: ["SDWebImageMapKit"])
     ],
     dependencies: [
