@@ -17,6 +17,10 @@ let package = Package(
             name: "SDWebImage",
             targets: ["SDWebImage"]),
         .library(
+            name: "SDWebImageStatic",
+            type: .static,
+            targets: ["SDWebImage"]),
+        .library(
             name: "SDWebImageDynamic",
             type: .dynamic,
             targets: ["SDWebImage"]),
